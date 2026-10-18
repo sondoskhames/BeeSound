@@ -1,0 +1,115 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #fff;
+    color: #111;
+    font-family: Arial, sans-serif;
+}
+
+.checkout-page {
+    position: relative;
+    max-width: 700px;
+    min-height: 390px;
+    margin: 40px auto;
+    padding: 28px 30px;
+    border: 1px solid #b9a3d6;
+    background: #fff;
+}
+
+.page-header {
+    margin-bottom: 25px;
+}
+
+.page-header h1 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.back-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.back-link:hover {
+    color: #b33180;
+}
+
+.shipping-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 290px;
+}
+
+.form-control {
+    background: #e9e9e9;
+    border: none;
+    border-radius: 5px;
+    height: 34px;
+    padding: 8px 12px;
+    font-size: 10px;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    background: #f3f3f3;
+    outline: 1px solid #b33180;
+    box-shadow: none;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 25px 0 15px;
+}
+
+.payment-fields {
+    max-width: 290px;
+}
+
+.payment-fields > .form-control {
+    margin-bottom: 8px;
+}
+
+.checkout-footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pink-btn {
+    width: 150px;
+    background: #b33180;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 11px;
+}
+
+.pink-btn:hover {
+    background: #982567;
+    color: #fff;
+}
+
+@media (max-width: 575.98px) {
+    .checkout-page {
+        margin: 15px auto;
+        min-height: calc(100vh - 30px);
+        padding: 22px 16px;
+    }
+
+    .shipping-fields,
+    .payment-fields {
+        max-width: 100%;
+    }
+
+    .checkout-footer {
+        margin-top: 35px;
+    }
+}

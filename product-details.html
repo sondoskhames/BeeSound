@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BeeSound | Product Details</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="product-details.css">
+</head>
+
+<body>
+
+<main class="container product-page">
+
+    <a href="Our Collection.html" class="close-btn" aria-label="Back to collection">
+        &times;
+    </a>
+
+    <div class="row g-4 product-details">
+
+        <!-- Product Images -->
+        <div class="col-12 col-md-7">
+            <div class="row g-2 product-gallery">
+
+                <div class="col-6">
+                    <div class="main-image">
+                        <img id="mainProductImage" src="headphone.png"
+                             alt="Product image">
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="extra-images" id="extraImages"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Product Information -->
+        <div class="col-12 col-md-5 product-info">
+
+            <h1 id="productName">Beats By Dre</h1>
+
+            <div class="product-colors" id="productColors"></div>
+
+            <p class="details-price" id="productPrice">BAM 29.99</p>
+
+            <div class="specifications">
+                <p><strong>Brand:</strong> <span id="productBrand"></span></p>
+                <p><strong>Model Name:</strong> <span id="productModel"></span></p>
+                <p><strong>Color:</strong> <span id="productColor"></span></p>
+                <p><strong>Form Factor:</strong> <span id="productForm"></span></p>
+                <p><strong>Connectivity Technology:</strong> <span id="productConnectivity"></span></p>
+            </div>
+
+            <a href="cart.html" class="btn add-to-cart">Add To Cart</a>
+
+        </div>
+    </div>
+
+    <!-- Related Products -->
+    <section class="related-section">
+        <h2>Related Products</h2>
+        <div class="row row-cols-4 row-cols-md-8 g-2" id="relatedProducts"></div>
+    </section>
+
+</main>
+
+<script src="product-details.js"></script>
+</body>
+</html>
